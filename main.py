@@ -3,8 +3,6 @@ import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 from aiohttp import web
-
-# Qoʻshtirnoq ichiga BotFather bergan YANGI uzun tokenni joylashtiring:
 TOKEN = "8678456257:AAGPBLpsSyuArYiSPGgGUy8S4a4EnfuVJRg"
 
 bot = Bot(token=TOKEN)
