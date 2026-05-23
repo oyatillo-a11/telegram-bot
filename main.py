@@ -4,8 +4,8 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart
 from aiohttp import web
 
-# Tokenni hech qanday probelsiz, toppa-toʻgʻri shu yerga yozdik:
-TOKEN = "8678456257:AAEto_KQibg7CTF0sV0-2FjFdIIQXnGP60c"
+# Qoʻshtirnoq ichiga BotFather bergan YANGI uzun tokenni joylashtiring:
+TOKEN = "8678456257:AAGPBLpsSyuArYiSPGgGUy8S4a4EnfuVJRg"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -18,7 +18,6 @@ async def start_command(message: types.Message):
 async def echo_message(message: types.Message):
     await message.answer(f"Siz yozdingiz: {message.text}")
 
-# Render oʻchrib yubormasligi uchun port ochamiz:
 async def handle(request):
     return web.Response(text="Bot is running alive!")
 
