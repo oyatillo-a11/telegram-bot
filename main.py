@@ -39,5 +39,6 @@ async def main():
     # 2. BotniPolling rejimida ishga tushiramiz
     print("Bot ishga tushmoqda...")
     await dp.start_polling(bot)
-    if __name__ == "__main__":
+ if __name__ == "__main__":
     asyncio.run(main())
+    
